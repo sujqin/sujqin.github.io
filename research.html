@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Research</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="edu.html">Education</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="pub.html">Publications</a></div>
+<div class="menu-item"><a href="teach.html">Teaching</a></div>
+<div class="menu-item"><a href="openings.html">Openings</a></div>
+</td>
+<td id="layout-content">
+<h1>Research</h1>
+<p>Our group conducts research at the intersection of power systems, transportation systems, and emerging data-center/computing systems. Taking a systems perspective, we develop theory, tools, and insights to address societal challenges arising in the energy transition. We currently focus on the following research directions. We are deeply grateful for support from the NSF (including the ASPIRE ERC), Google, Schweitzer Engineering Laboratories, C3.AI, and the Purdue College of Engineering.</p>
+<ul>
+<li><p>Accelerating Large Load Grid Interconnection via Flexible Connection</p>
+</li>
+<li><p>Transportation Electrification and Coupled Power-Transportation Systems</p>
+</li>
+<li><p>Algorithmic Foundation for Grid of Tomorrow</p>
+</li>
+</ul>
+<h2>Accelerating Large Load Grid Interconnection via Flexible Connection</h2>
+<p>The unprecedented load growth driven by AI data centers and electrification necessitates timely expansion of grid capacities. However, supply chain shortage, interconnection queues, and administrative processes result in lengthy delays for large load interconnection. For GW-scale data centers, such delays can span more than 5 years, potentially hindering the pace of AI growth. 
+Flexible connection is a type of interconnection programs that allow large load to connect now/faster with the caveat that the loads may be curtailed/intervened by the utility/system operator when the grid is stressed. Real-world examples include <a href="https://investor.pgecorp.com/news-events/press-releases/press-release-details/2025/New-PGE-Service-Offering-Makes-It-Easier-and-Faster-to-Connect-EV-Chargers-EV-Fleets-and-Big-Batteries-to-the-Grid/">PG&amp;E's Flex Connect program</a> and <a href="https://insidelines.pjm.com/pjm-kicks-off-initiative-to-balance-reliability-with-large-load-growth/">PJM's recent non-capacity backed load (NCBL) proposal</a>. </p>
+<p>Our research develops analytical frameworks and optimization models that explicitly account for network constraints to evaluate how flexible interconnection programs can enhance hosting capacity. We propose novel methodologies for trading off quality of service guarantees (e.g., number of curtailment events per year) with the hosting capacity gain unlocked by flexible connection.
+The work provides actionable insights for utilities and system operators to design flexible connection programs that speed up interconnection processes.</p>
+<table class="imgtable"><tr><td>
+<img src="flexconnect.png" alt="flexconnect" width="480px" height="320px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<div class="infoblock">
+<div class="blocktitle"></div>
+<div class="blockcontent">
+<p>N. Gu, G. Chen, and J. Qin, &ldquo;The Role of Flexible Connection in Accelerating Load Interconnection in Distribution Networks,&rdquo; <i>Proceedings of the Hawaii International Conference on System Sciences (HICSS)</i>, 2026 (accepted).</p>
+</div></div>
+<h2>Transportation Electrification and Coupled Power-Transportation Systems</h2>
+<ul>
+<li><p><b>Pricing Charging to Jointly Optimize Grid and Traffic</b> </p>
+</li>
+</ul>
+<p>We study workplace EV-charging tariffs that shape both commuter departure times and grid load during the morning commute. By  modeling how the commuters&rsquo; travel and charging choices at the user equilibrium impact the transportation system and power system costs, and how time-varying charging tariffs can nudge such behavior,  we derive tariffs that optimize transportation cost, electricity cost, or the costs of both systems jointly. </p>
+<table class="imgtable"><tr><td>
+<img src="morningcommute.png" alt="morningcommute" width="924px" height="360px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<div class="infoblock">
+<div class="blocktitle"></div>
+<div class="blockcontent">
+<ol>
+<li><p>M. Mou, S. Qian, and J. Qin, &ldquo;Nexus Cognizant Pricing of Workplace Electric Vehicle Charging,&rdquo; <i>Proceedings of the American Control Conference (ACC)</i>, 2024.</p>
+</li>
+<li><p>K. Freymiller, J. Qin, and S. Qian, &ldquo;Joint Optimization of Transportation-Energy Systems Through Electric Vehicle Charging Pricing in the Morning Commute,&rdquo; <i>IEEE Open Journal of Intelligent Transportation Systems</i>, 2025.</p>
+</li>
+</ol>
+</div></div>
+<ul>
+<li><p><b>Braess Paradox in Coupled Power-Transportation Systems</b></p>
+</li>
+</ul>
+<p>Capacity expansion in grid and transportation systems is critical to support  new EV charging loads and evolving mobility needs. 
+Despite the growing interdependence of these systems, capacity expansion in them is often managed by separate agencies with minimal coordination. 
+Our recent work emphasizes the need of joint planning of grid and transportation infrastructures by demonstrating  
+that  expansion in one system may inadvertently degrade the performance of itself and/or the other system.  
+These unintended effects, akin to Braess paradox in transportation engineering, manifest in various new forms, such as grid expansion exacerbating traffic congestion or road expansion increasing grid dispatch costs and reducing renewable utilization. 
+Utilizing a mathematical model of coupled grid-transportation systems,  we  precisely identify  the  mechanisms behind each new type of Braess paradoxes, underscoring the role played by the coupling between these systems. 
+Adapting optimization and game theory methods, we then develop efficient algorithms that can 
+predict these outcomes based on data.
+Additionally, we propose practical, pricing-based policies to mitigate these paradoxes and enhance system-wide efficiency.</p>
+<table class="imgtable"><tr><td>
+<img src="bp.png" alt="bp" width="456px" height="357px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<div class="infoblock">
+<div class="blocktitle"></div>
+<div class="blockcontent">
+<p>M. Mou and J. Qin, &ldquo;Braess Paradoxes in Coupled Power and Transportation Systems,&rdquo; <i>Management Science</i>, 2025 (to be submitted).</p>
+</div></div>
+<ul>
+<li><p><b>Quantifying Spatiotemporal Charging Flexibility as Network of Virtual Batteries and Power Lines</b></p>
+</li>
+</ul>
+<p>While infrastructure upgrades are ultimately essential to support transportation electrification, EV charging loads possess inherent flexibility in when/where charging occurs, which can be harnessed to delay or offset the need for new grid batteries and transmission lines, potentially saving billions in infrastructure costs while accelerating EV adoption and charger deployment.
+However, effectively characterizing and representing this spatiotemporal flexibility for diverse stakeholders&#8201;&mdash;&#8201;such as grid operators, utilities, and policymakers&#8201;&mdash;&#8201;remains a challenge. 
+Our work  introduces a framework that integrates vehicle trip data (e.g., from the Chicago and San Francisco Bay areas for millions of vehicles), grid and charging infrastructure constraints (e.g., distribution grid EV hosting capacity and charger availability), and EV adoption scenarios to quantify infrastructure-cognizant spatiotemporal charging flexibility. 
+This results in spatially granular maps of distributed virtual batteries and virtual power lines formed by flexible EV charging loads within existing infrastructure limits.
+These outputs facilitate direct comparison between investing in physical grid assets and managed charging solutions, and they enable realistic assessments of the grid's capacity to support various EV adoption scenarios.</p>
+<table class="imgtable"><tr><td>
+<img src="chargingflexibility.png" alt="chargingflexibility" width="1144px" height="362px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<div class="infoblock">
+<div class="blocktitle"></div>
+<div class="blockcontent">
+<p>G. Chen, N. R. Shishvan, Z. Guo, and J. Qin, &ldquo;Quantifying Spatiotemporal Charging Flexibility of Electric Vehicles as Virtual Grid Assets to Accelerate Sustainable Energy Transition,&rdquo; <i>Cell Reports Physical Science</i>, 2025 (accepted).</p>
+</div></div>
+<ul>
+<li><p><b>Charging Control for Electric Roadways with Dynamic Wireless Power Transfer Capabilities</b></p>
+</li>
+</ul>
+<p>Working with the <a href="http://aspire.usu.edu">NSF ASPIRE ERC</a>, we explore the operations for future electric roadways equipped with dynamic wireless power transfer (DWPT) capabilities. Since EVs are charged while driving through such electric roadways, explicitly modeling the coupling between the power and transportation systems is critical. In particular, we study the problem of real-time charging control, where charging decisions have to be made without future traffic information. By generalizing the notion of valley filling charging profiles and earliest laxity first priority rules, we are able to develop real-time charging policy that is robust to changes in traffic conditions. </p>
+<table class="imgtable"><tr><td>
+<img src="dwpt.png" alt="dwpt" width="1248px" height="253px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<div class="infoblock">
+<div class="blocktitle"></div>
+<div class="blockcontent">
+<ol>
+<li><p>Y. Dong, J. Qin, S. Sivaranjani, X. Lu, D. Aliprantis, and D. Love, &ldquo;Real-Time Charging Control for Electric Roadways: Formulation and Causal Algorithms,&rdquo; <i>IEEE Power &amp; Energy Society General Meeting (PESGM)</i>, 2024.</p>
+</li>
+<li><p>Y. Dong, G. Chen, J. Qin, S. Sivaranjani, X. Lu, D. Aliprantis, and D. Love, &ldquo;Real-Time Charging Control for Electric Roadways,&rdquo; <i>IEEE Transactions on Smart Grid</i>, 2025 (submitted).</p>
+</li>
+</ol>
+</div></div>
+<h2>Algorithmic Foundation for Grid of Tomorrow</h2>
+<ul>
+<li><p><b>Convex Approach for Nonpreemptive Load Scheduling, with Application to Low-Cost Managed Charging</b></p>
+</li>
+</ul>
+<p>A key barrier to mass adoption of managed charging is the high cost of smart chargers capable of dynamically adjusting charging currents. 
+In contrast, converting standard charging cables into &lsquo;&lsquo;smart&rsquo;&rsquo; chargers by connecting them to networked smart plugs is vastly more affordable.
+Can smart-plug-actuated dumb chargers perform comparably to  smart chargers for managing EV charging at scale?
+Our work demonstrates that they can, through an algorithm that schedules only the charging starting times of EVs, avoiding frequent  on/off switching of the smart plugs.
+At the core of the algorithm is a novel graph-theoretic approach that navigates within the set of non-unique solutions of a relaxed scheduling problem, identifying near-optimal schedules implementable via simple on/off commands with minimal modification. 
+Our algorithm is demonstrated to be &gt;12x faster and  with &lt;0.5% performance loss compared to commercial mixed integer optimization solvers. </p>
+<table class="imgtable"><tr><td>
+<img src="scheduling.png" alt="scheduling" width="1040px" height="265px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<div class="infoblock">
+<div class="blocktitle"></div>
+<div class="blockcontent">
+<ol>
+<li><p>M. Chen and J. Qin, &ldquo;Scheduling and Pricing Non-Preemptive Electric Loads: A Convex Approach,&rdquo; <i>IEEE Conference on Decision and Control (CDC)</i>, 2022. (<b>IEEE CSS Energy System TC Outstanding Student Paper Award</b>)</p>
+</li>
+<li><p>M. Davoudi, M. Chen, and J. Qin, &ldquo;Nonpreemptive Scheduling of Flexible Loads in Smart Grids via Convex Optimization,&rdquo; <i>IEEE Transactions on Control of Network Systems</i>, 2025.</p>
+</li>
+</ol>
+</div></div>
+<ul>
+<li><p><b>Learning-based Stochastic Dispatch: Generalization Guarantees</b></p>
+</li>
+</ul>
+<p>Modern grids must dispatch generation under deep renewable uncertainty, yet forecast-then-optimize pipelines can overfit historical conditions and provide weak assurances on out-of-sample reliability.
+This work learns a dispatch policy directly for the risk-limiting objective and provides generalization guarantees: bounds that quantify how the policy's out-of-sample cost and risk deviate from the true optimum as a function of sample size and model complexity. 
+Obtaining such results require generalizing the classical statitical learning theory to incorporate network constraints.
+The result is a practical, fast-to-evaluate dispatch rule with principled assurances that its reliability-cost tradeoffs will hold beyond the training data.</p>
+<div class="infoblock">
+<div class="blocktitle"></div>
+<div class="blockcontent">
+<p>G. Chen and J. Qin, &ldquo;Neural Risk-Limiting Dispatch in Power Networks: Formulation and Generalization Guarantees,&rdquo; <i>IEEE Transactions on Power Systems</i>, 2025.</p>
+</div></div>
+<div id="footer">
+<div id="footer-text">
+Page generated 2025-10-08 13:29:58 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
